@@ -14,7 +14,7 @@ namespace muscshop.Controllers
         public ActionResult Index()
         {
             var genres = _storeContext.Genres;
-            // var genres = _database.Genres;
+            var genres = _database.Genres;
             return View(genres);
         }
         public ActionResult Browse(string genre)
